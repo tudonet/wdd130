@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #3B3B3B   ;
+  --secondary-color: #010100 ;
+  --accent1-color: #E5C58B;
+  --accent2-color: #FFFFFF;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: Arial, Helvetica, sans-serif;
+  --normal-font: Arial, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #3B3B3B;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #3B3B3B; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #FFFFFF;
+  --nav-background-color: #FFFFFF;
+  --nav-link-color: #3B3B3B;
+  --nav-link-background-color: #E5C58B;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #3B3B3B;
+}
+header, nav hover, buttons, div, footer
+
+body{
+    background-color: var(--accent2-color); 
+    font-family: var(--normal-font);
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{width:80px;}
+
+header{
+    background-color: var(--accent2-color); 
+}
+
+#content{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: var(--nav-background-color);
+}
+
+nav a{
+    text-align: center;
+    color: var(--nav-link-color);
+    background-color: var(--nav-link-background-color);
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.home-title{
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+h4{
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+#hero-msg h1{
+    text-align: center;
+}
+
+#hero-msg h4{
+    text-align: center;
+}
+
+
+#hero-img{
+    width:100%;
+}
+
+.book, .join{
+    background-color: var(--accent1-color); 
+    color: var(--primary-color);
+}
+
+.book:hover, .join:hover{
+    background-color: var(--primary-color); 
+    color: var(--accent2-color);
+}
+
+.msg{
+    color: var(--headline-color-on-white);
+}
+
+.msg h2{
+    color: var(--headline-color-on-white);
+    font-family: var(--heading-font);
+}
+
+.msg p{
+    color: var(--paragraph-color-on-white);
+    font-family: var(--normal-font);
+}
+
+.icon {
+    width: 80px;
+}
+
+.button-box{
+    text-align: center;
+}
+
+main section{
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background: var(--accent1-color);
+}
+
+footer{
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+
+footer p {
+    font-size: 1.2em;
+    color: var(--secondary-color);
+}
+
+footer p a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+footer a{
+    color: var(--primary-color);
+}
+
+footer a:hover{
+    color: var(--secondary-color);
+}
+
