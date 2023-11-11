@@ -223,7 +223,6 @@ main section img {
     
 }
 
-
 .button-box{
     text-align: center;
 }
@@ -231,8 +230,6 @@ main section img {
 main section{
     text-align: center;
 }
-
-
 
 footer{
     background-color: var(--accent1-color);
@@ -266,6 +263,67 @@ footer a:hover{
     color: var(--secondary-color);
 }
 
+/* RIVERS */
+
+#rivers-heading{padding:10px 30px; }
+.home-grid-rivers{padding:10px 30px; }
+
+.rivers-info-side-left{
+    width:100%;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    margin-bottom:100px;
+}
+
+.rivers-info-side-left .info-side-1{
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.rivers-info-side-left .info-side-1 img{
+    width:100%;
+    margin-bottom:10px;
+    border-radius:4px;
+}
+
+.rivers-info-side-left .info-side-2{
+    grid-column: 2/3;
+    padding: 0px 20px;
+    font-size:16px;
+}
+
+.rivers-info-side-right{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    margin-bottom:100px;
+}
+
+.rivers-info-side-right .info-side-1{
+    grid-column: 1/2;
+    padding: 0px 20px;
+    font-size:16px;
+}
+
+.rivers-info-side-right .info-side-2{
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.rivers-info-side-right .info-side-2 img{
+    width:100%;
+    margin-bottom:10px;
+    border-radius:4px;
+}
+
+.waiting_for{
+    width:100%;
+    text-align: center;
+}
+
+.waiting_for h2{
+    line-height: 3;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -307,5 +365,29 @@ footer a:hover{
     footer {
         margin-top: 25px;
     }
+
+    .rivers-info-side-left{
+        grid-template-columns: 1fr;
+    }
+
+    .rivers-info-side-right{
+        grid-template-columns: 1fr;
+    }
+
+    .info-side-1, .info-side-2{
+        width:100%;
+        grid-column: 1!important;
+        margin-bottom:50px;
+    }
+
+    .rivers-info-side-right .info-side-1{
+        order: 2;
+    } 
+
+    .rivers-info-side-right .info-side-2{
+        order: 1;
+    }
+
+    
 }
 
