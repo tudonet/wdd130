@@ -2,9 +2,9 @@
 
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #3B3B3B;
     --secondary-color: #02020a;
-    --accent1-color: #E5C58B;
+    --primary-color: #e6d9d8;
+    --accent1-color: #05204a;
     --accent2-color: #FFFFFF;
 
     /* change the values below to your chosen font(s) */
@@ -22,7 +22,8 @@ body {
     padding: 0;
 }
 
-h2 {
+h1, h2, h3 {
+    font-family: var(--heading-font);
     margin: 0;
 }
 
@@ -115,8 +116,12 @@ h3.banner-text {
     padding: 0px 30px;
     text-transform: uppercase;
     color: #FFF;
-    background-color: #02020a;
+    background-color: var(--accent1-color);
     border-radius: 5px;
+}
+
+.theme-button:hover{
+    background-color: var(--secondary-color);
 }
 
 .banner-img-info {
