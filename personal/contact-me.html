@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramon Andrade | About me</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                Ramon Andrade
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="projects.html">Projects</a>
+            </nav>
+        </header>
+
+        <div class="container">
+
+            <h2>Get in touch</h2>
+            <br>
+            <div id="alert" class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Thank you!</strong> I will answer you as soon as possible
+            </div>
+
+            <form action="#" onsubmit="return submitForm()">
+
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="firstname" required="required" placeholder="Your name..">
+
+                <label for="lname">E-mail</label>
+                <input type="text" id="email" name="email" required="required"  placeholder="Your email..">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" required="required" placeholder="Write something.." style="height:100px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        Ramon Andrade - 2023
+    </footer>
+<script>
+    function submitForm(){
+        x = document.getElementById("alert");
+        x.style.display = "block";
+        return false;
+    }
+</script>
+</body>
+</html>
